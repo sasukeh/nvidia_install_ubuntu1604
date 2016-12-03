@@ -2,6 +2,10 @@
 # e-mail: flogofrein@gmail.com
 # USAGE:
 # ./<filename> # this script must have executing rights.
+# Reference:
+#   README.txt
+
+
 
 # install packages
 sudo add-apt-repository ppa:graphics-drivers/ppa
@@ -21,4 +25,7 @@ echo "export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}" >> ~/.bashrc
 echo "export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}" >> ~/.bashrc
 echo "export CUDA_HOME=/usr/local/cuda" >> ~/.bashrc
 
- 
+# cuda run
+chmod +x cuda_8.0.*_linux-run
+sudo sh ./cuda_8.0.*_linux-run
+sudo Reboot 
